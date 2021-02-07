@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "creation": "2021-02-04 17:35:39.578861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "post_id",
+  "post_user",
+  "post_title",
+  "post_body"
+ ],
+ "fields": [
+  {
+   "fieldname": "post_id",
+   "fieldtype": "Data",
+   "label": "Post id"
+  },
+  {
+   "fieldname": "post_user",
+   "fieldtype": "Data",
+   "label": "User id"
+  },
+  {
+   "fieldname": "post_title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "post_body",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-05 01:27:12.823165",
+ "modified_by": "Administrator",
+ "module": "TESTER",
+ "name": "Test API",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "post_title",
+ "track_changes": 1
+}

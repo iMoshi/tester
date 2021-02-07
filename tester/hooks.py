@@ -102,23 +102,28 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"tester.tasks.all"
-# 	],
-# 	"daily": [
-# 		"tester.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"tester.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"tester.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"tester.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+    "cron": {
+        "0/5 * * * *": [
+            "tester.tester.doctype.test_api.test_api.add_api_based"
+        ]
+    },
+    # 	"all": [
+    # 		"tester.tasks.all"
+    # 	],
+    # 	"daily": [
+    # 		"tester.tasks.daily"
+    # 	],
+    # "hourly": [
+    #     "tester.tester.doctype.test_api.test_api.add_api_based"
+    # ],
+    # 	"weekly": [
+    # 		"tester.tasks.weekly"
+    # 	]
+    # 	"monthly": [
+    # 		"tester.tasks.monthly"
+    # 	]
+}
 
 # Testing
 # -------
@@ -142,4 +147,3 @@ app_license = "MIT"
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
-
